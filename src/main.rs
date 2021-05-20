@@ -1,15 +1,12 @@
-macro_rules! Abs {
-    ($n:expr) => {
-        if $n < 0 {
-            -$n
-        } else {
-            $n
-        }
-    };
-}
+use rand::Rng;
 
 fn main() {
-    let n = Abs!(-2);
+  let mut input = String::new();
 
-    println!("{}", n);
+  std::io::stdin().read_line(&mut input).ok();
+  let s = input.trim();
+
+  for _i in 0..3 {
+    println!("{}", s);
+  }
 }
